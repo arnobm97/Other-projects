@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*trial start*/
+.trial-container {
+	margin: auto;
+	padding-top: 20px;
+	padding-left: 100px;
+}
+.table-containter {
+	margin-top: 20px;
+	width: 600px;
+	margin-left: 50px;
+	display: flex;
+	flex-direction: row;
+}
+/* th {
+	border: solid 1px white;
+} */
+tr {
+	border: solid 1px white;
+	cursor: pointer;
+	transition: all 0.2s ease-in;
+}
+td {
+	border: solid 1px white;
+	padding: 12px;
+	text-align: left;
+}
+.table-header {
+	/* height: 100px; */
+	background: linear-gradient(
+		to left bottom,
+		rgba(255, 255, 255, 0.7),
+		rgba(255, 255, 255, 0.3)
+	);
+}
+.table-header:hover {
+	background-color: cyan;
+	transform: scale(1.02);
+	box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+.table-name {
+	text-align: center;
+}
+.table-name1 {
+	text-align: center;
+}
+
+.column {
+	flex: 30%;
+}
+/* .color img {
+	height: 20px;
+	width: 20px;
+	border-radius: 100%;
+	object-fit: cover;
+	flex-shrink: 0;
+} */
+
+.t-container {
+	width: 200px;
+	height: 200px;
+
+	/* position: relative; */
+}
+.wrapping {
+	display: flex;
+}
+.t-image {
+	height: 20px;
+	width: 20px;
+	border-radius: 100%;
+	object-fit: cover;
+	flex-shrink: 0;
+	cursor: pointer;
+}
+
+.middle-text {
+	transition: 0.5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, 20%);
+	-ms-transform: translate(-50%, 20%);
+}
+.t-container:hover .t-image {
+	opacity: 0.3;
+}
+
+.t-container:hover .middle-text {
+	opacity: 1;
+}
+.actual-text img {
+	width: 200px;
+	height: 150px;
+}
+.actual-text {
+	/* margin-top: 220px; */
+	margin-right: 120px;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.t-main-container {
+	display: flex;
+	align-items: center;
+	/* flex-direction: row;
+	justify-content: space-evenly; */
+	height: 300px;
+}
+.t-header {
+	text-align: center;
+	font-size: large;
+	margin-right: 100px;
+	margin-top: 20px;
+}
+.t-wrapper {
+	height: auto;
+}
+.col {
+	align-items: center;
+}
+.order {
+	transform: translate(50%, 40%);
+}
